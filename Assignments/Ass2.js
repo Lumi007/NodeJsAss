@@ -43,7 +43,7 @@ fs.mkdir('Students', (err) => {
                     console.log('Personal information added to user.js.');
 
                     // Step 6: Update the file user.js to {your_name}.js
-                    const newName = 'olumide_fakorede.js';
+                    const newName = 'olumide_fa.js';
                     fs.rename('Names/user.js', `Names/${newName}`, (err) => {
                       if (err) {
                         console.error('Error renaming user.js:', err);
