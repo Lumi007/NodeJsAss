@@ -21,7 +21,7 @@ app.post('/api/items', (req, res) => {
       res.status(500).json({ error: 'Internal Server Error' });
     } else {
       const items = JSON.parse(data);
-      newItem.id = Date.now(); // You can generate IDs more robustly in production
+      newItem.id = Date.now();
       
       items.push(newItem);
       
